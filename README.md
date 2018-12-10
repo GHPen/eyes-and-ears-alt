@@ -15,7 +15,7 @@ See the [releases page](https://github.com/GHPen/eyes-and-ears/releases).
   - Instead of being in the footnotes
   ![](screenshots/footnote.png)
 - Built-in PDF outline/bookmarks for easy navigation
-![](screenshots/pdfoutline.png)
+![](screenshots/pdfoutline_small.png)
 - Bass clef version of the book also available
 ![](screenshots/bass.png)
   - For those who would like more practice in reading the bass clef

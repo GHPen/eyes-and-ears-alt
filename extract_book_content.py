@@ -73,7 +73,7 @@ def get_melody_string(title, counter):
     counter_comment = "% " + str(counter) + "\n"
     inc_counter = '#(inc-counter)\n'
     markup_toc = '\\tocItem \\markupTocItem \\counter \\' + title + '\n'
-    markup_melody = '\\markupMelody \\counter \\' + title + '_score\n'
+    markup_melody = '\\markupMelody \\counter \\' + title + '_score\n \\' + title + '\n' 
     return counter_comment + inc_counter + markup_toc + markup_melody
 
 def get_index_string(index_match):

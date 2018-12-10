@@ -51,24 +51,34 @@ markupText =
       (else str))))
 
 markupMelody =
-#(define-scheme-function (num mus) (number? ly:score?)
+#(define-scheme-function (num mus alist) (number? ly:score? list?)
+  (let*
+    ((title (assoc-ref alist 'title))
+    (composer (assoc-ref alist 'composer))
+   )
    #{
      \markup {
        \column {
          \vspace #1.4
          % \halign #LEFT
          % \line {
-         \justify-line {
-           % \general-align #Y #UP
+         \fill-line {
            \fontsize #4 \with-color #grey #(fixed-number-width num)
-           % \hspace #2
-           % \general-align #Y #UP
-           \score { #mus }
+           #title
+           #composer
          }
+         \vspace #1.4
+        \justify-line{
+          % \general-align #Y #UP
+          % \fontsize #4 \with-color #grey #(fixed-number-width num)
+          % \hspace #2
+          % \general-align #Y #UP
+          \score { #mus }
+        }
          \vspace #1.4
        }
      }
-   #})
+   #}))
 
 markupPlainScore =
 #(define-scheme-function (mus) (ly:score?)

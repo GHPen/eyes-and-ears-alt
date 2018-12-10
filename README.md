@@ -11,13 +11,13 @@ See the [releases page](https://github.com/GHPen/eyes-and-ears/releases).
 ## Features
 
 - Title and composer above each piece
-![](screenshots/title_composer.png)
+- ![](screenshots/title_composer.png)
   - Instead of being in the footnotes
-  ![](screenshots/footnote.png)
+  - ![](screenshots/footnote.png)
 - Built-in PDF outline/bookmarks for easy navigation
-![](screenshots/pdfoutline_small.png)
+- ![](screenshots/pdfoutline_small.png)
 - Bass clef version of the book also available
-![](screenshots/bass.png)
+- ![](screenshots/bass.png)
   - For those who would like more practice in reading the bass clef
 
 ## Other versions

@@ -1,13 +1,17 @@
 CLEF = bass
-LYTEMPLATE = eyes-and-ears.ly
+
+CONTENT_DIR = book_content
 BASENAME = eyes-and-ears-$(CLEF)
-LYFILE = $(BASENAME).ly
+LYTEMPLATE = $(CONTENT_DIR)/eyes-and-ears.ly
+BOOK_CONTENT = $(CONTENT_DIR)/book_content.ily
+LYFILE = $(CONTENT_DIR)/$(BASENAME).ly
+TOC = $(CONTENT_DIR)/toc_$(CLEF)
 PDFFILE = $(BASENAME).pdf
 
 .content:
 	# use intermediary file for compatibility with both mac os and linux
-	sed -i.bak "s/\`/\'/g" book_content.ily
-	rm book_content.ily.bak
+	sed -i.bak "s/\`/\'/g" $(BOOK_CONTENT)
+	rm $(BOOK_CONTENT).bak
 
 .melodies:
 	python3 make_melodies.py -o $(CLEF)
@@ -20,9 +24,9 @@ book: $(LYTEMPLATE)
 pdf: book outline open
 
 outline: $(PDFFILE)
-	pdfoutliner toc_$(CLEF) --inpdf $(PDFFILE) -s 14 --outpdf temp.pdf -d \\s\\s
+	pdfoutliner $(TOC) --inpdf $(PDFFILE) -s 14 --outpdf temp.pdf -d \\s\\s
 	rm $(PDFFILE)
 	mv temp.pdf $(PDFFILE)
 
-open: $(PDFILE)
+open: $(PDFFILE)
 	open $(PDFFILE)

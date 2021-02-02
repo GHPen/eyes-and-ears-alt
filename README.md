@@ -5,7 +5,7 @@ Alternative versions of Ben Crowell's [*Eyes and Ears: An Anthology of Melodies 
 
 Features:
 
-- Titles and composer above each piece
+- Title and composer above each piece
 - Built-in PDF outline for easy navigation
 - Bass clef version also available
 

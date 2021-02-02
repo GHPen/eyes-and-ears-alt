@@ -1,7 +1,13 @@
 
 # Eyes and Ears Alt
 
-Alternative versions of Ben Crowell's *Eyes and Ears: An Anthology of Melodies for Sight-Singing*.
+Alternative versions of Ben Crowell's [*Eyes and Ears: An Anthology of Melodies for Sight-Singing*](http://www.lightandmatter.com/sight/sight.html).
+
+Features:
+
+- Titles and composer above each piece
+- Built-in PDF outline for easy navigation
+- Bass clef version also available
 
 ## Download
 
@@ -10,7 +16,7 @@ See the [releases page](https://github.com/GHPen/eyes-and-ears/releases).
 
 ## Features
 
-##### Title and composer above each piece
+#### Title and composer above each piece
 
 ![](screenshots/title_composer.png)
 
@@ -18,15 +24,15 @@ Instead of being in the footnotes, as in the original version,
 
 ![](screenshots/footnote.png)
 
-Or only available in the table of contents and index, as in the Clairnote version. 
+...or only available in the table of contents and index, as in the Clairnote version. 
 
-##### Built-in PDF outline/bookmarks for easy navigation
+#### Built-in PDF outline/bookmarks for easy navigation
 
 ![](screenshots/pdfoutline.png)
 
-##### Bass clef version of the book also available
+#### Bass clef version of the book also available
 
-For those who would like more practice in reading the bass clef
+For those who would like more practice in reading the bass clef.
 
 ![](screenshots/bass.png)
   

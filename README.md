@@ -11,7 +11,8 @@ Features:
 
 ## Download
 
-See the [releases page](https://github.com/GHPen/eyes-and-ears/releases).
+- [Treble clef version](https://github.com/pnlng/eyes-and-ears-alt/releases/download/v0.0.1/eyes-and-ears-treble.pdf)
+- [Bass clef version](https://github.com/pnlng/eyes-and-ears-alt/releases/latest/download/eyes-and-ears-bass.pdf)
 
 
 ## Features
